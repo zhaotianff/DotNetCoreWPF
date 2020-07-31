@@ -1,0 +1,31 @@
+﻿<blur:BlurWindow x:Class="ImportXmlns.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:blur="clr-namespace:TianXiaTech;assembly=BlurWindow"
+        xmlns:local="clr-namespace:ImportXmlns"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="Transparent">
+    <!--这里我们从Nuget下载了一个包-->
+    <!--通过xmlns:blur="clr-namespace:TianXiaTech;assembly=BlurWindow"引入命名空间，就可以使用BlurWindow中的类-->
+    <!--我们再将Window替换为包中的BlurWindow-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid>
+            <Grid.Background>
+                <SolidColorBrush Color="Purple" Opacity=".5"/>
+            </Grid.Background>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.Background>
+                <SolidColorBrush Color="White"/>
+            </Grid.Background>
+        </Grid>
+    </Grid>
+</blur:BlurWindow>
