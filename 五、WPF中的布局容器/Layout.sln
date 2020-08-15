@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grid容器", "Grid容器\Grid容器.csproj", "{F66F1FDC-05F4-4243-99CA-2D461DF1D3AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridPanel", "GridPanel\GridPanel.csproj", "{F66F1FDC-05F4-4243-99CA-2D461DF1D3AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
