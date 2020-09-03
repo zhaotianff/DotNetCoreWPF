@@ -1,0 +1,57 @@
+﻿<Window x:Class="WrapPanelDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WrapPanelDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="140" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--默认水平排列-->
+        <WrapPanel Grid.Row="0" Grid.Column="0">
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+            <!--当水平方向排列不下时，自动排列到下一行-->
+            <Button Content="abc"/>
+        
+        </WrapPanel>
+        
+        <!--设置为垂直排列-->
+        <WrapPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical">
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+            <!--当垂直方向排列不下时，自动排列到下一列-->
+            <Button Content="abc"/>
+        </WrapPanel>
+
+        <!--指定面板宽度，可以看到元素会自动排列-->
+        <WrapPanel Grid.Row="1" Grid.Column="0" Width="80" HorizontalAlignment="Left">
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+        </WrapPanel>
+
+        <!--指定面板高度，可以看到元素会自动排列-->
+        <WrapPanel Grid.Row="1" Grid.Column="1" Height="40" VerticalAlignment="Top" Orientation="Vertical">
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+            <Button Content="abc"/>
+        </WrapPanel>
+    </Grid>
+</Window>
