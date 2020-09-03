@@ -73,6 +73,12 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
+
+                <Label Name="label1" Content="不跨越列" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
+                <Label Name="label2" Content="跨越两列" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+
+                <Label Name="label3" Content="不跨越行" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+                <Label Name="label4" Content="跨越两行" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" VerticalAlignment="Center"/>
             </Grid>
         </GroupBox>
     </Grid>
