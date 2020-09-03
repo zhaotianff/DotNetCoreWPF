@@ -1,0 +1,29 @@
+﻿<Window x:Class="CanvasDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CanvasDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <!--基本使用-->
+        <!--未指定宽高-->
+        <Button Content="Canvas" Canvas.Left="100" Canvas.Top="200"/>
+        <Button Content="Canvas" Canvas.Left="200px" Canvas.Top="200px"/>
+        <Button Content="Canvas" Canvas.Left="2in" Canvas.Top="2.5in"/>
+        <Button Content="Canvas" Canvas.Right="100" Canvas.Bottom="200"/>
+        
+        <!--指定宽高 -->
+        <Button Content="Canvas" Canvas.Left="50" Canvas.Top="100" Width="150" Height="28"/>
+        
+        <!--指定叠放顺序-->
+        <Button Content="ZIndex=0" Canvas.Left="300" Canvas.Top="190"/>
+        <Button Content="ZIndex=1" Canvas.Left="310" Canvas.Top="200"/>
+        <Button Content="ZIndex=2" Canvas.Left="290" Canvas.Top="200"/>
+
+        <!--ZIndex值都为0的情况下，后放置的元素会显示在上面-->
+        <Button Content="ZIndex=0-1" Canvas.Left="380" Canvas.Top="190"/>
+        <Button Content="ZIndex=0-2" Canvas.Left="380" Canvas.Top="190"/>
+    </Canvas>
+</Window>
