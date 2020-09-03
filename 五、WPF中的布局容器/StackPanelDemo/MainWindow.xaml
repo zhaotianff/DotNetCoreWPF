@@ -1,0 +1,33 @@
+﻿<Window x:Class="StackPanelDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StackPanelDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--垂直堆放元素(默认)-->
+        <StackPanel Grid.Column="0">
+            <Button Content="Button1" Margin="10"/>
+            <!--通过HorizontalAlignment设置在水平方向的位置-->
+            <Button Content="Button2" HorizontalAlignment="Left"/>
+            <Button Content="Button3" HorizontalAlignment="Right"/>
+        </StackPanel>
+
+        <!--水平堆放元素 -->
+        <!--需要指定属性  Orientation="Horizontal"-->
+        <StackPanel Grid.Column="1" Orientation="Horizontal">
+            <!--通过Margin设置边距-->
+            <Button Content="Button1" Margin="10"/>
+            <!--通过VerticalAlignment设置在垂直方向的位置-->
+            <Button Content="Button2" VerticalAlignment="Top"/>
+            <Button Content="Button3" VerticalAlignment="Bottom"/>
+        </StackPanel>
+    </Grid>
+</Window>
