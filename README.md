@@ -12,6 +12,7 @@ Visual Studio 2019 + .Net Core 3.1
 * [三、与.Net Framework的区别](https://www.cnblogs.com/zhaotianff/p/13440107.html)
 * [四、WPF中的XAML](https://www.cnblogs.com/zhaotianff/p/13398156.html)
 * [五、WPF中的布局](https://www.cnblogs.com/zhaotianff/p/13438747.html)
+* [六、WPF中的常用控件](https://www.cnblogs.com/zhaotianff/p/13608111.html)
 
 
 ## License
