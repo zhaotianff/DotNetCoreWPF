@@ -1,0 +1,36 @@
+﻿<Window x:Class="ContentControlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ContentControlDemo"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label>HelloWorld</Label>
+
+        <Label xmlns:sys="clr-namespace:System;assembly=mscorlib" Grid.Row="1">
+            <sys:DateTime>2020.09.21</sys:DateTime>
+        </Label>
+
+
+        <Label Grid.Row="2">
+            <Image Source="4.jpg" />
+        </Label>
+
+        <Label Grid.Row="3">
+            <Grid>
+                <Label Content="HelloWorld" HorizontalAlignment="Center" VerticalAlignment="Center" Panel.ZIndex="1"></Label>
+                <Image Source="4.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </Label>
+    </Grid>
+</Window>
