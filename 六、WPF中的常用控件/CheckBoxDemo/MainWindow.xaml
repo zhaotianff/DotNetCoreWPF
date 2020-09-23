@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:CheckBoxDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <CheckBox IsChecked="True" Content="允许我保存凭据"/>
-    </Grid>
+    <StackPanel>
+        <CheckBox  Content="允许我保存凭据" Margin="5"/>
+
+        <CheckBox IsThreeState="True" Content="允许我保存凭据" Margin="5" IsChecked="{x:Null}"/>
+    </StackPanel>
 </Window>

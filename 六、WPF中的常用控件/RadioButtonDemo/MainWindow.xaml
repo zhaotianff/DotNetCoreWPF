@@ -1,0 +1,17 @@
+﻿<Window x:Class="RadioButtonDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RadioButtonDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <RadioButton Content="Radio Button" Margin="5"/>
+
+        <RadioButton Name="radioButton1" Content="1" GroupName="group1" Margin="5"/>
+        <RadioButton Name="radioButton2" Content="2" GroupName="group1" Margin="5"/>
+
+        <RadioButton IsThreeState="True" Content="Three State Radio Button" Margin="5" IsChecked="{x:Null}"/>
+    </StackPanel>
+</Window>

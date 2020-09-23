@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
-        <ToggleButton Content="Button1" Width="88" HorizontalAlignment="Left" Margin="5" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"/>
-        <ToggleButton Content="Button2" Width="88" HorizontalAlignment="Left" Margin="5" IsChecked="True"/>
-        <ToggleButton Content="Button3" Width="88" HorizontalAlignment="Left" Margin="5" IsChecked="False"/>
+        <ToggleButton Content="Defaut" Width="88" HorizontalAlignment="Left" Margin="5" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"/>
+        <ToggleButton Content="Checked" Width="88" HorizontalAlignment="Left" Margin="5" IsChecked="True"/>
+        <ToggleButton Content="UnChecked" Width="88" HorizontalAlignment="Left" Margin="5" IsChecked="False"/>
+        <ToggleButton Content="Three State" Width="88" HorizontalAlignment="Left" Margin="5" IsThreeState="True" IsChecked="{x:Null}"/>
     </StackPanel>
 </Window>
