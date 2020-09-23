@@ -5,7 +5,15 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContentControlDemo", "ContentControlDemo\ContentControlDemo.csproj", "{D6EC12C9-5116-4D92-999D-A15F91027E2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabelDemo", "LabelDemo\LabelDemo.csproj", "{1088E7A4-0295-4BCE-A6AF-B1176A48A2E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabelDemo", "LabelDemo\LabelDemo.csproj", "{1088E7A4-0295-4BCE-A6AF-B1176A48A2E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo", "demo\demo.csproj", "{D0C3ABC8-3C39-40B6-995F-A47BEB3854AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonDemo", "ButtonDemo\ButtonDemo.csproj", "{8A2B7E14-B017-45E5-9B1B-44707A6FED88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBoxDemo", "CheckBoxDemo\CheckBoxDemo.csproj", "{6E9FF683-91B3-4E18-A4AA-C77C3DAF61D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleButtonDemo", "ToggleButtonDemo\ToggleButtonDemo.csproj", "{626483DD-A806-4A55-90AE-2DB5BCCA2C89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{1088E7A4-0295-4BCE-A6AF-B1176A48A2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1088E7A4-0295-4BCE-A6AF-B1176A48A2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1088E7A4-0295-4BCE-A6AF-B1176A48A2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C3ABC8-3C39-40B6-995F-A47BEB3854AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C3ABC8-3C39-40B6-995F-A47BEB3854AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C3ABC8-3C39-40B6-995F-A47BEB3854AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C3ABC8-3C39-40B6-995F-A47BEB3854AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A2B7E14-B017-45E5-9B1B-44707A6FED88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A2B7E14-B017-45E5-9B1B-44707A6FED88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A2B7E14-B017-45E5-9B1B-44707A6FED88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A2B7E14-B017-45E5-9B1B-44707A6FED88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E9FF683-91B3-4E18-A4AA-C77C3DAF61D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9FF683-91B3-4E18-A4AA-C77C3DAF61D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9FF683-91B3-4E18-A4AA-C77C3DAF61D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9FF683-91B3-4E18-A4AA-C77C3DAF61D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626483DD-A806-4A55-90AE-2DB5BCCA2C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626483DD-A806-4A55-90AE-2DB5BCCA2C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626483DD-A806-4A55-90AE-2DB5BCCA2C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626483DD-A806-4A55-90AE-2DB5BCCA2C89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
