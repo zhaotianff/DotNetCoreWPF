@@ -1,0 +1,56 @@
+﻿<Window x:Class="ExpanderDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExpanderDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Expander Header="Expander 1">
+            <Grid Background="LightSkyBlue">
+                <TextBlock TextWrapping="WrapWithOverflow" Text="Expander is a HeaderedContentControl, which means its Content and Header properties can be of any type (such as string, image, or panel). For more information, see the HeaderedContentControl class." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+            </Grid>
+        </Expander>
+
+        <Expander Grid.Row="1" Header="Expander 2">
+            <TextBlock TextWrapping="WrapWithOverflow" Text="If the content of the expanded window is too large for the window, you can wrap the content of the Expander in a ScrollViewer control to provide scrollable content. Scrolling capability is not automatically provided by the Expander control.
+
+For an Expander to work correctly, do not specify a Height on the Expander control when the ExpandDirection property is set to Down or Up. Similarly, do not specify a Width on the Expander control when the ExpandDirection property is set to Left or Right. When you set a size on the Expander control in the direction that the expanded content is displayed, the area that is defined by the size parameter is displayed with a border around it. This area displays even when the window is collapsed. To set the size of the expanded window, set size dimensions on the content of the Expander control or the ScrollViewer that encloses the content."/>
+        </Expander>
+
+        <Grid Grid.Row="2" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Expander ExpandDirection="Down" Header="Expand Direction -> Down">
+                <TextBlock Text="The alignment of Expander content can be defined by setting the HorizontalContentAlignment and VerticalContentAlignment properties on the control. These properties are applied to the header and to the contents of the expanded window." TextWrapping="WrapWithOverflow"/>
+            </Expander>
+
+            <Expander ExpandDirection="Right" Header="Expand Direction -> Right" Grid.Row="0" Grid.Column="1">
+                <TextBlock Text="The alignment of Expander content can be defined by setting the HorizontalContentAlignment and VerticalContentAlignment properties on the control. These properties are applied to the header and to the contents of the expanded window." TextWrapping="WrapWithOverflow"/>
+            </Expander>
+
+            <Expander ExpandDirection="Left" Header="Expand Direction -> Left" Grid.Row="1" Grid.Column="0">
+                <TextBlock Text="The alignment of Expander content can be defined by setting the HorizontalContentAlignment and VerticalContentAlignment properties on the control. These properties are applied to the header and to the contents of the expanded window." TextWrapping="WrapWithOverflow"/>
+            </Expander>
+
+            <Expander ExpandDirection="Up" Header="Expand Direction -> Up" Grid.Row="1" Grid.Column="1">
+                <TextBlock Text="The alignment of Expander content can be defined by setting the HorizontalContentAlignment and VerticalContentAlignment properties on the control. These properties are applied to the header and to the contents of the expanded window." TextWrapping="WrapWithOverflow"/>
+            </Expander>
+        </Grid>
+    </Grid>
+</Window>

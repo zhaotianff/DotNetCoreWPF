@@ -5,17 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScrollViewerDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="300" ResizeMode="NoResize" WindowStyle="ToolWindow">
+        Title="MainWindow" Height="600" Width="300" ResizeMode="NoResize" WindowStyle="ToolWindow">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
        
         <Image Height="250" Source="4.jpg"/>
 
-        <ScrollViewer Grid.Row="1">
+        <ScrollViewer Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto">
             <Image Height="250" Source="4.jpg"/>
         </ScrollViewer>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+
+            <ScrollViewer Grid.Column="0" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Name="scroll">
+                <Image Source="4.jpg"/>
+            </ScrollViewer>
+
+            <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Column="1">
+                <StackPanel>
+                    <Button Content="ScrollToEnd" Margin="5" Click="ScrollToEnd_Click"/>
+                    <Button Content="ScrollToTop" Margin="5" Click="ScrollToTop_Click"/>
+                    <Button Content="ScrollToVerticalOffset" Margin="5" Click="ScrollToVerticalOffset_Click"/>
+                    <Button Content="ScrollToHorizontalOffset" Margin="5" Click="ScrollToHorizontalOffset_Click"/>
+                    <Button Content="LineLeft" Margin="5" Click="LineLeft_Click"/>
+                    <Button Content="LineRight" Margin="5" Click="LineRight_Click"/>
+                    <Button Content="PageDown" Margin="5" Click="PageDown_Click"/>
+                    <Button Content="PageRight" Margin="5" Click="PageRight_Click"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
     </Grid>
 </Window>

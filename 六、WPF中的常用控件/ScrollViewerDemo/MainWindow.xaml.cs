@@ -24,5 +24,45 @@ namespace ScrollViewerDemo
         {
             InitializeComponent();
         }
+
+        private void ScrollToTop_Click(object sender, RoutedEventArgs e)
+        {
+            scroll.ScrollToTop();
+        }
+
+        private void ScrollToEnd_Click(object sender, RoutedEventArgs e)
+        {
+            scroll.ScrollToEnd();
+        }
+
+        private void LineLeft_Click(object sender, RoutedEventArgs e)
+        {
+            scroll.LineLeft();
+        }
+
+        private void LineRight_Click(object sender, RoutedEventArgs e)
+        {
+            scroll.LineRight();
+        }
+
+        private void ScrollToVerticalOffset_Click(object sender, RoutedEventArgs e)
+        {
+            scroll.ScrollToVerticalOffset(20);
+        }
+
+        private void ScrollToHorizontalOffset_Click(object sender, RoutedEventArgs e)
+        {
+            scroll.ScrollToHorizontalOffset(40);
+        }
+
+        private void PageDown_Click(object sender, RoutedEventArgs e)
+        {
+            scroll.PageDown();
+        }
+
+        private void PageRight_Click(object sender, RoutedEventArgs e)
+        {
+            scroll.PageRight();
+        }
     }
 }
