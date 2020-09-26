@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupBoxDemo", "GroupBoxDem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpanderDemo", "ExpanderDemo\ExpanderDemo.csproj", "{4B7576CE-3D46-4168-B51B-90400A090235}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameDemo", "FrameDemo\FrameDemo.csproj", "{C53C97D9-25D0-42D5-89A8-262F7FE34A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{4B7576CE-3D46-4168-B51B-90400A090235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B7576CE-3D46-4168-B51B-90400A090235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B7576CE-3D46-4168-B51B-90400A090235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53C97D9-25D0-42D5-89A8-262F7FE34A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53C97D9-25D0-42D5-89A8-262F7FE34A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53C97D9-25D0-42D5-89A8-262F7FE34A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53C97D9-25D0-42D5-89A8-262F7FE34A69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
