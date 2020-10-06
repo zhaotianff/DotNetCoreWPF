@@ -11,10 +11,14 @@
             <RowDefinition/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-
-        <TabControl></TabControl>
-        <Frame>
+      
+        <Frame Name="frame">
             
         </Frame>
+
+        <WrapPanel Grid.Row="1">
+            <Button Content="Page1"  Margin="5" Width="88" Click="Button_Click"/>
+            <Button Content="Page2"  Margin="5" Width="88" Click="Button_Click_1"/>
+        </WrapPanel>
     </Grid>
 </Window>

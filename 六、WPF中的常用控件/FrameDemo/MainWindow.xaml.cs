@@ -24,5 +24,15 @@ namespace FrameDemo
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.frame.Source = new Uri("Pages/Page1.xaml",UriKind.Relative);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.frame.Source = new Uri("Pages/Page2.xaml",UriKind.Relative);
+        }
     }
 }
