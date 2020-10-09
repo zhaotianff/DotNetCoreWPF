@@ -10,5 +10,6 @@
 
     <Grid>
         <Label Content="Page2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="88"/>
+        <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Margin="0,200,0,0"></TextBox>
     </Grid>
 </Page>

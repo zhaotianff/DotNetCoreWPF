@@ -14,19 +14,13 @@ using System.Windows.Shapes;
 namespace FrameDemo.Pages
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for StartupPage.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class StartupPage : Page
     {
-        public Page1()
+        public StartupPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService nav = NavigationService.GetNavigationService(this);
-            nav.Navigate(new Uri("Pages/Page2.xaml", UriKind.Relative));
         }
     }
 }

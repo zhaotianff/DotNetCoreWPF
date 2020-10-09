@@ -1,4 +1,4 @@
-﻿<Page x:Class="FrameDemo.Pages.Page1"
+﻿<Page x:Class="FrameDemo.Pages.StartupPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,11 +6,9 @@
       xmlns:local="clr-namespace:FrameDemo.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Page1" KeepAlive="True">
+      Title="StartupPage">
 
     <Grid>
-        <Label Content="Page1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="88"/>
-        <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Margin="0,200,0,0"></TextBox>
-        <Button Content="Navigate to page2" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Startup Page" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="88"/>
     </Grid>
 </Page>

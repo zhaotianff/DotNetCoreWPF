@@ -34,5 +34,27 @@ namespace FrameDemo
         {
             this.frame.Source = new Uri("Pages/Page2.xaml",UriKind.Relative);
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.frame.Navigate(new Uri("Pages/Page1.xaml", UriKind.Relative));
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            this.frame.Navigate(new Uri("Pages/Page2.xaml", UriKind.Relative));
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            if(this.frame.CanGoBack)
+                this.frame.GoBack();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            if (this.frame.CanGoForward)
+                this.frame.GoForward();
+        }
     }
 }

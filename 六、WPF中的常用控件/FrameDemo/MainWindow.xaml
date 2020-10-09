@@ -11,14 +11,18 @@
             <RowDefinition/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-      
-        <Frame Name="frame">
+
+        <Frame Name="frame" Source="Pages/StartupPage.xaml" NavigationUIVisibility="Visible">
             
         </Frame>
 
         <WrapPanel Grid.Row="1">
             <Button Content="Page1"  Margin="5" Width="88" Click="Button_Click"/>
             <Button Content="Page2"  Margin="5" Width="88" Click="Button_Click_1"/>
+            <Button Content="Navigate to Page1" Margin="5" Width="128" Click="Button_Click_2"/>
+            <Button Content="Navigate to Page2" Margin="5" Width="128" Click="Button_Click_3"/>
+            <Button Content="Go Back" Width="88" Margin="5" Click="Button_Click_4"/>
+            <Button Content="Go Forward" Width="88" Margin="5" Click="Button_Click_5"/>
         </WrapPanel>
     </Grid>
 </Window>
