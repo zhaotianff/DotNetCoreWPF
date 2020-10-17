@@ -1,0 +1,27 @@
+﻿<Application x:Class="JumplistDemo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:JumplistDemo"
+             Startup="Application_Startup">
+
+    <JumpList.JumpList>
+        <JumpList>
+            <!--jum task-->
+            <JumpTask Title="Read Me" 
+                      Description="Open readme.txt in Notepad." 
+                      ApplicationPath="C:\Windows\notepad.exe"
+                      IconResourcePath="C:\Windows\System32\imageres.dll"
+                      IconResourceIndex="14"
+                      WorkingDirectory="D:\"
+                      Arguments="readme.txt">
+                
+            </JumpTask>
+            <!--jump path need register file handler-->
+            <JumpPath CustomCategory="常用链接" Path="https://www.baidu.com"/>
+        </JumpList>
+    </JumpList.JumpList>
+    
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
