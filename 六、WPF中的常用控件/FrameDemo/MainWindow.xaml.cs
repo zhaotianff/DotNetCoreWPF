@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FrameDemo.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,9 @@ namespace FrameDemo
     /// </summary>
     public partial class MainWindow : Window
     {
+        Page1 page1 = new Page1();
+        Page2 page2 = new Page2();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -55,6 +59,21 @@ namespace FrameDemo
         {
             if (this.frame.CanGoForward)
                 this.frame.GoForward();
+        }
+
+        private void frame_Navigated(object sender, NavigationEventArgs e)
+        {
+            MessageBox.Show("导航完成");
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            this.frame.Navigate(page1);
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            this.frame.Content = page2;
         }
     }
 }

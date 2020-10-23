@@ -21,13 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolTipDemo", "ToolTipDemo\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScrollViewerDemo", "ScrollViewerDemo\ScrollViewerDemo.csproj", "{3AE93AC5-6C2C-4BF5-A76B-357D46E1299B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabItemDemo", "TabItemDemo\TabItemDemo.csproj", "{28DD8A48-10DA-4CDC-8A86-A2A3AA0EDB17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TabItemDemo", "TabItemDemo\TabItemDemo.csproj", "{28DD8A48-10DA-4CDC-8A86-A2A3AA0EDB17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupBoxDemo", "GroupBoxDemo\GroupBoxDemo.csproj", "{844F3721-2D1F-4B6B-AA41-CC1A266CD60A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupBoxDemo", "GroupBoxDemo\GroupBoxDemo.csproj", "{844F3721-2D1F-4B6B-AA41-CC1A266CD60A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpanderDemo", "ExpanderDemo\ExpanderDemo.csproj", "{4B7576CE-3D46-4168-B51B-90400A090235}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpanderDemo", "ExpanderDemo\ExpanderDemo.csproj", "{4B7576CE-3D46-4168-B51B-90400A090235}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameDemo", "FrameDemo\FrameDemo.csproj", "{C53C97D9-25D0-42D5-89A8-262F7FE34A69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameDemo", "FrameDemo\FrameDemo.csproj", "{C53C97D9-25D0-42D5-89A8-262F7FE34A69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageDemo", "PageDemo\PageDemo.csproj", "{C5AB83E2-1633-440C-93A6-62DCFE7D1449}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{C53C97D9-25D0-42D5-89A8-262F7FE34A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C53C97D9-25D0-42D5-89A8-262F7FE34A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C53C97D9-25D0-42D5-89A8-262F7FE34A69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5AB83E2-1633-440C-93A6-62DCFE7D1449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5AB83E2-1633-440C-93A6-62DCFE7D1449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5AB83E2-1633-440C-93A6-62DCFE7D1449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5AB83E2-1633-440C-93A6-62DCFE7D1449}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

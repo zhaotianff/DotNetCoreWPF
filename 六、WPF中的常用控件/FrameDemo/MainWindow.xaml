@@ -9,10 +9,10 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
 
-        <Frame Name="frame" Source="Pages/StartupPage.xaml" NavigationUIVisibility="Visible">
+        <Frame Name="frame" Source="Pages/StartupPage.xaml" NavigationUIVisibility="Visible" Navigated="frame_Navigated">
             
         </Frame>
 
@@ -23,6 +23,8 @@
             <Button Content="Navigate to Page2" Margin="5" Width="128" Click="Button_Click_3"/>
             <Button Content="Go Back" Width="88" Margin="5" Click="Button_Click_4"/>
             <Button Content="Go Forward" Width="88" Margin="5" Click="Button_Click_5"/>
+            <Button Content="Page1(Keep content)" Width="128" Margin="5" Click="Button_Click_6"/>
+            <Button Content="Pagw2(Keep content)" Width="128" Margin="5" Click="Button_Click_7"/>
         </WrapPanel>
     </Grid>
 </Window>
