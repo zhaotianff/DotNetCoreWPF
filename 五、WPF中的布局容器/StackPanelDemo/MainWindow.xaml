@@ -31,7 +31,7 @@
             <Button Content="Button3" VerticalAlignment="Bottom"/>
         </StackPanel>
 
-        <Grid Grid.Column="2">
+        <Grid Grid.Column="2" ShowGridLines="True">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
