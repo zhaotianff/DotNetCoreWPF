@@ -10,6 +10,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <!--垂直堆放元素(默认)-->
@@ -29,5 +30,23 @@
             <Button Content="Button2" VerticalAlignment="Top"/>
             <Button Content="Button3" VerticalAlignment="Bottom"/>
         </StackPanel>
+
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--FlowDirection可以指定元素的浮动方向-->
+            <!--LeftToRight是默认值，表示元素从左向右浮动-->
+            <StackPanel FlowDirection="LeftToRight">
+                <Button Content="Button1" Width="120" Height="28" HorizontalAlignment="Left"/>
+            </StackPanel>
+
+            <!--RightToLeft表示元素从右向左浮动-->
+            <StackPanel FlowDirection="RightToLeft" Grid.Row="1">
+                <Button Content="Button1" Width="120" Height="28" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

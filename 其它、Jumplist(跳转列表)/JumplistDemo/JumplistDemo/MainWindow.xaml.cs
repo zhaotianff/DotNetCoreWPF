@@ -43,6 +43,9 @@ namespace JumplistDemo
                     case Google:
                         OpenUrl(GoogleUrl);
                         break;
+                    default:
+                        OpenFileUrl(args[0]);
+                        break;
                 }
             }
         }
@@ -60,6 +63,28 @@ namespace JumplistDemo
         private void OpenUrl(string url)
         {
             this.browser.Address = url;
+        }
+
+        private void OpenFileUrl(string filePath)
+        {
+            try
+            {
+                if (System.IO.File.Exists(filePath) == false)
+                    return;
+
+                using(System.IO.FileStream fs = System.IO.File.Open(filePath,System.IO.FileMode.Open))
+                {
+                    using (System.IO.StreamReader sr = new System.IO.StreamReader(fs,Encoding.UTF8))
+                    {
+                        var url = sr.ReadLine();
+                        OpenUrl(url);
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

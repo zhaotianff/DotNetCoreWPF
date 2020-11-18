@@ -22,6 +22,9 @@ namespace JumplistDemo
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
+            //register file extension
+            RegisterHandler();
+
             //get jump list
             JumpList jumpList = JumpList.GetJumpList(Application.Current);
 
@@ -45,6 +48,11 @@ namespace JumplistDemo
             jumpTaskBaidu.IconResourceIndex = 0;
             jumpList.JumpItems.Add(jumpTaskGoogle);
 
+            JumpPath jumpPathGithub = new JumpPath();
+            jumpPathGithub.CustomCategory = "Common";
+            jumpPathGithub.Path = Environment.CurrentDirectory + "\\github.zturl";
+            jumpList.JumpItems.Add(jumpPathGithub);
+
             JumpList.SetJumpList(Application.Current, jumpList);
 
             JumplistDemo.MainWindow mainWindow = new MainWindow(e.Args);
@@ -55,17 +63,60 @@ namespace JumplistDemo
 
         private void RegisterHandler()
         {
+            if (Registry.ClassesRoot.GetSubKeyNames().Contains(ZTURL))
+                return;
+
             //here add a zturl file type
             //1、 add hkey_classroot file extension and type description
             //2、 use previous description add shell\open\command & DefaultIcon(default value is file extension description)
             //3、 use executable name add heky_classroot\applications\exename\NoOpenWith 
             SetFileAssociation(ZTURL, ZTURLDescription);
+            var path = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            var pathWidthParameter = $"{path} \"%1\"";
+            CreateShell(ZTURLDescription, pathWidthParameter);
+            CreateNoOpenWith(System.IO.Path.GetFileName(path));
+        }
+
+        private void UnRegisterHandler()
+        {
+            RemoveSubKey(Registry.ClassesRoot, ZTURL);
+            RemoveSubKey(Registry.ClassesRoot, ZTURLDescription);
+            var name = System.IO.Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            RemoveSubKey(Registry.ClassesRoot, $"Applications\\{name}");
         }
 
         public void SetFileAssociation(string extension, string des)
         {
             var regKey = AddSubKey(Registry.ClassesRoot, ZTURL);
-            SetSubKeyValue(regKey, null, ZTURLDescription);
+            SetSubKeyValue(regKey, null, des);
+        }
+
+        public void CreateShell(string des,string path)
+        {
+            try
+            {
+                var regKey = AddSubKey(Registry.ClassesRoot, des);
+                regKey = AddSubKey(regKey, "shell\\open\\command");
+                SetSubKeyValue(regKey, null,path);
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void CreateNoOpenWith(string name)
+        {
+            try
+            {
+                var regKeyPath = $"Applications\\{name}";
+                var regKey = AddSubKey(Registry.ClassesRoot, regKeyPath);
+                SetSubKeyValue(regKey, "NoOpenWith", "");
+            }
+            catch
+            {
+
+            }
         }
 
         private RegistryKey AddSubKey(RegistryKey registryKey,string name)
@@ -89,6 +140,19 @@ namespace JumplistDemo
             catch
             {
 
+            }
+        }
+
+        private bool RemoveSubKey(RegistryKey registryKey,string subKey)
+        {
+            try
+            {
+                registryKey.DeleteSubKeyTree(subKey);
+                return true;
+            }
+            catch
+            {
+                return false;
             }
         }
     }
