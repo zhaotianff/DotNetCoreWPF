@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language>
+	<Main_Title>Login Form</Main_Title>
+	<Main_UserName>UserName</Main_UserName>
+	<Main_Password>Password</Main_Password>
+	<Main_Button>Login</Main_Button>
+	<Window1_Title>Main Form</Window1_Title>
+	<Window1_Label>Welcome</Window1_Label>
+</Language>

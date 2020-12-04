@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language>
+	<Main_Title>登陆窗体</Main_Title>
+	<Main_UserName>用户名</Main_UserName>
+	<Main_Password>密码</Main_Password>
+	<Main_Button>登陆</Main_Button>
+	<Window1_Title>主界面</Window1_Title>
+	<Window1_Label>欢迎</Window1_Label>
+</Language>
