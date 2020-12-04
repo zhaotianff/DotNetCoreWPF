@@ -1,0 +1,42 @@
+﻿<Window x:Class="ResourceDictionaryx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ResourceDictionaryx"
+        mc:Ignorable="d"
+        Title="{DynamicResource ResourceKey=Main.Title}" Height="350" Width="525">
+    <Ribbon Background="White">
+        <Ribbon.ApplicationMenu>
+            <RibbonApplicationMenu Background="LightSkyBlue" BorderBrush="White">
+
+            </RibbonApplicationMenu>
+        </Ribbon.ApplicationMenu>
+        <RibbonTab Header="{DynamicResource Main.RibbonTab.Setting}" BorderBrush="White">
+            <RibbonGroup Header="{DynamicResource Main.RibbonGroup.Setting}" >
+                <RibbonButton Label="{DynamicResource Main.RibbonButton.Setting}" ToolTipTitle="{DynamicResource Main.RibbonButton.Setting.Title}" ToolTipDescription="{DynamicResource Main.RibbonButton.Setting.Description}" LargeImageSource="Ico/setting.png" FocusedBorderBrush="White" ToolTipImageSource="Ico/setting.png" Click="RibbonButton_Click">
+                    <RibbonButton.MouseOverBackground>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFFEFBF4" Offset="0"/>
+                            <GradientStop Color="#FFFDE7CE" Offset="0.19"/>
+                            <GradientStop Color="#FFFDDEB8" Offset="0.39"/>
+                            <GradientStop Color="White" Offset="0.382"/>
+                            <GradientStop Color="White" Offset="0.79"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </RibbonButton.MouseOverBackground>
+                    <RibbonButton.FocusedBackground>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFFEFBF4" Offset="0"/>
+                            <GradientStop Color="White" Offset="0.19"/>
+                            <GradientStop Color="#FFFDDEB8" Offset="0.39"/>
+                            <GradientStop Color="White" Offset="0.39"/>
+                            <GradientStop Color="White" Offset="0.79"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </RibbonButton.FocusedBackground>
+                </RibbonButton>
+            </RibbonGroup>
+        </RibbonTab>
+    </Ribbon>
+</Window>

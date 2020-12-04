@@ -1,0 +1,19 @@
+﻿<Window x:Class="Resx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Resx"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Content="{x:Static local:StrResources.ChangeLanguage}"></Label>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,5,0,0" Width="200" Name="combox_Culture">
+            <ComboBoxItem Content="{x:Static local:StrResources.zh_CN}"></ComboBoxItem>
+            <ComboBoxItem Content="{x:Static local:StrResources.en_US}"></ComboBoxItem>
+        </ComboBox>
+
+        <Button Content="{x:Static local:StrResources.OK}" Width="88" Height="28" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,120,0"/>
+        <Button Content="{x:Static local:StrResources.Cancel}" Width="88" Height="28" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,0"/>
+    </Grid>
+</Window>

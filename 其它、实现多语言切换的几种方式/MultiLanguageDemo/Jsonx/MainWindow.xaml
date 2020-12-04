@@ -1,0 +1,19 @@
+﻿<Window x:Class="Jsonx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jsonx"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Content="{Binding ChangeLanguage, Source={StaticResource LangManger}, Mode=OneWay}"></Label>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,5,0,0" Width="200" Name="combox_Culture" SelectionChanged="combox_Culture_SelectionChanged">
+            <ComboBoxItem Content="{Binding zh_CN, Source={StaticResource LangManger}, Mode=OneWay}"></ComboBoxItem>
+            <ComboBoxItem Content="{Binding en_US, Source={StaticResource LangManger}, Mode=OneWay}"></ComboBoxItem>
+        </ComboBox>
+
+        <Button Content="{Binding OK, Source={StaticResource LangManger}, Mode=OneWay}" Width="88" Height="28" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,120,0"/>
+        <Button Content="{Binding Cancel, Source={StaticResource LangManger}, Mode=OneWay}" Width="88" Height="28" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,0"/>
+    </Grid>
+</Window>
