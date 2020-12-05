@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <WrapPanel>
-        <Button Content="AllowsTransparency" Click="Button_Click"></Button>
+        <GroupBox Header="Window属性" Margin="10">
+            <Button Content="AllowsTransparency" Click="Button_Click"></Button>
+        </GroupBox>
+
+        <GroupBox Header="显示Window" Margin="10">
+            <WrapPanel>
+                <Button Content="显示Window" Click="Button_Click_1" Margin="5"/>
+                <Button Content="显示Window2" Click="Button_Click_2" Margin="5"/>
+            </WrapPanel>
+        </GroupBox>
     </WrapPanel>
 </Window>
