@@ -1,0 +1,18 @@
+﻿<Window x:Class="WindowDemo.WindowStyleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowDemo"
+        mc:Ignorable="d"
+        Title="WindowStyleWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="Window Style"></Label>
+        <ComboBox Width="220" SelectionChanged="ComboBox_SelectionChanged" Name="combox_WindowStyle" HorizontalAlignment="Left">
+            <ComboBoxItem>None</ComboBoxItem>
+            <ComboBoxItem>SingleBorderWindow</ComboBoxItem>
+            <ComboBoxItem>ThreeDBorderWindow</ComboBoxItem>
+            <ComboBoxItem>ToolWindow</ComboBoxItem>
+        </ComboBox>
+    </StackPanel>
+</Window>

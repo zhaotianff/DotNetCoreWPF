@@ -13,7 +13,8 @@ Visual Studio 2019 + .Net Core 3.1
 * [四、WPF中的XAML](https://www.cnblogs.com/zhaotianff/p/13398156.html)
 * [五、WPF中的布局](https://www.cnblogs.com/zhaotianff/p/13438747.html)
 * [六、WPF中的常用控件](https://www.cnblogs.com/zhaotianff/p/13608111.html)
-
+* [七、WPF中的常用控件(二)](https://www.cnblogs.com/zhaotianff/p/14087168.html)
+* [其它、实现多语言切换的几种方式](https://www.cnblogs.com/zhaotianff/p/14042803.html)
 
 ## License
 [MIT](LICENSE)

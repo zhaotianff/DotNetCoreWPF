@@ -8,7 +8,10 @@
         Title="MainWindow" Height="450" Width="800">
     <WrapPanel>
         <GroupBox Header="Window属性" Margin="10">
-            <Button Content="AllowsTransparency" Click="Button_Click"></Button>
+            <WrapPanel>
+                <Button Content="AllowsTransparency" Click="Button_Click" Margin="5"></Button>
+                <Button Content="WindowStyle" Click="Button_Click_3" Margin="5"></Button>
+            </WrapPanel>
         </GroupBox>
 
         <GroupBox Header="显示Window" Margin="10">

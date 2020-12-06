@@ -60,5 +60,11 @@ namespace WindowDemo
 
             window.ShowDialog();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            WindowStyleWindow windowStyleWindow = new WindowStyleWindow();
+            windowStyleWindow.Show();
+        }
     }
 }
