@@ -11,6 +11,7 @@
             <WrapPanel>
                 <Button Content="AllowsTransparency" Click="Button_Click" Margin="5"></Button>
                 <Button Content="WindowStyle" Click="Button_Click_3" Margin="5"></Button>
+                <Button Content="Icon" Click="Button_Click_4" Margin="5"></Button>
             </WrapPanel>
         </GroupBox>
 

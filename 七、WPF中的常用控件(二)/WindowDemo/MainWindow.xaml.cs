@@ -66,5 +66,11 @@ namespace WindowDemo
             WindowStyleWindow windowStyleWindow = new WindowStyleWindow();
             windowStyleWindow.Show();
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            IconWindow iconWindow = new IconWindow();
+            iconWindow.Show();
+        }
     }
 }
