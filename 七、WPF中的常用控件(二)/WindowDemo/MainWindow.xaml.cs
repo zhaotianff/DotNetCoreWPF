@@ -72,5 +72,11 @@ namespace WindowDemo
             IconWindow iconWindow = new IconWindow();
             iconWindow.Show();
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            ResizeWindow resizeWindow = new ResizeWindow();
+            resizeWindow.Show();
+        }
     }
 }
