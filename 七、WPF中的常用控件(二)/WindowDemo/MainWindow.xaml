@@ -13,13 +13,37 @@
                 <Button Content="WindowStyle" Click="Button_Click_3" Margin="5"></Button>
                 <Button Content="Icon" Click="Button_Click_4" Margin="5"></Button>
                 <Button Content="ResizeMode" Click="Button_Click_5" Margin="5"></Button>
+                <GroupBox Header="窗口启动位置">
+                    <WrapPanel>
+                        <Button Content="CenterOwner" Click="Button_Click_12" Margin="5"></Button>
+                        <Button Content="CenterScreen" Click="Button_Click_13" Margin="5"></Button>
+                        <Button Content="Manual" Click="Button_Click_14" Margin="5"></Button>
+                    </WrapPanel>
+                </GroupBox>
             </WrapPanel>
         </GroupBox>
 
         <GroupBox Header="显示Window" Margin="10">
             <WrapPanel>
-                <Button Content="显示Window" Click="Button_Click_1" Margin="5"/>
-                <Button Content="显示Window2" Click="Button_Click_2" Margin="5"/>
+                <Button Content="Show()" Click="Button_Click_6" Margin="5"/>
+                <Button Content="ShowDialog()" Click="Button_Click_7" Margin="5"/>
+                
+                <Button Content="显示Window(XAML定义)" Click="Button_Click_1" Margin="5"/>
+                <Button Content="显示Window2(代码定义)" Click="Button_Click_2" Margin="5"/>
+            </WrapPanel>
+        </GroupBox>
+
+        <GroupBox Header="关闭Window" Margin="10">
+            <WrapPanel>
+                <Button Content="关闭当前窗口" Click="Button_Click_8" Margin="5"/>
+                <Button Content="隐藏当前窗口" Click="Button_Click_9" Margin="5"/>
+                <Button Content="阻止当前窗口关闭" Click="Button_Click_10" Margin="5"/>
+            </WrapPanel>
+        </GroupBox>
+
+        <GroupBox Header="DialogResult" Margin="10">
+            <WrapPanel>
+                <Button Content="打开Dialog" Click="Button_Click_11" Margin="5"/>
             </WrapPanel>
         </GroupBox>
     </WrapPanel>

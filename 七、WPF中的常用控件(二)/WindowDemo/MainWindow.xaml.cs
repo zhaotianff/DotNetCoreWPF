@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -77,6 +78,78 @@ namespace WindowDemo
         {
             ResizeWindow resizeWindow = new ResizeWindow();
             resizeWindow.Show();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            XAMLWindow xAMLWindow = new XAMLWindow();
+            xAMLWindow.Show();
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            XAMLWindow xAMLWindow = new XAMLWindow();
+            xAMLWindow.ShowDialog();
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private async void Button_Click_9(object sender, RoutedEventArgs e)
+        {
+            //隐藏窗口
+            this.Visibility = Visibility.Hidden;
+
+            //等待2秒后又显示窗口
+            await Task.Delay(2000);
+            this.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_10(object sender, RoutedEventArgs e)
+        {
+            //在窗口的Closing事件中添加 e.Cancel = true
+            //可以阻止窗口关闭
+            this.Closing += Window_Closing;
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
+        private void Button_Click_11(object sender, RoutedEventArgs e)
+        {
+            DialogResultWindow dialogResultWindow = new DialogResultWindow();
+
+            var result = dialogResultWindow.ShowDialog();
+
+            MessageBox.Show(result.ToString());
+        }
+
+        private void Button_Click_12(object sender, RoutedEventArgs e)
+        {
+            XAMLWindow xAMLWindow = new XAMLWindow();
+            xAMLWindow.Owner = this; //设置XAMLWindow的拥有者为当前窗口
+            xAMLWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner; //XAMLWindow的启动位置设置为当前窗口的中央
+            xAMLWindow.Show();
+        }
+
+        private void Button_Click_13(object sender, RoutedEventArgs e)
+        {
+            XAMLWindow xAMLWindow = new XAMLWindow();
+            xAMLWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen; //XAMLWindow的启动位置设置为屏幕中央
+            xAMLWindow.Show();
+        }
+
+        private void Button_Click_14(object sender, RoutedEventArgs e)
+        {
+            XAMLWindow xAMLWindow = new XAMLWindow();
+            xAMLWindow.WindowStartupLocation = WindowStartupLocation.Manual; //XAMLWindow的启动位置设置为手动
+            xAMLWindow.Left = 80; //距离屏幕左边边缘的距离是80
+            xAMLWindow.Top = 100;  //距离屏幕顶部边缘的距离是100
+            xAMLWindow.Show();
         }
     }
 }
