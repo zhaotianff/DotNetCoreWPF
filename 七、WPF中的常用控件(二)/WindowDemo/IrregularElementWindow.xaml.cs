@@ -13,19 +13,24 @@ using System.Windows.Shapes;
 namespace WindowDemo
 {
     /// <summary>
-    /// Interaction logic for ResizeWindow.xaml
+    /// IrregularElementWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class ResizeWindow : Window
+    public partial class IrregularElementWindow : Window
     {
-        public ResizeWindow()
+        public IrregularElementWindow()
         {
             InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.ResizeMode = (ResizeMode)this.combox_ResizeMode.SelectedIndex;
-            this.lbl_ResizeMode.Content = $"ResizeMode = {this.ResizeMode}";
+            this.Close();
+        }
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if(e.LeftButton == MouseButtonState.Pressed)
+                this.DragMove();
         }
     }
 }

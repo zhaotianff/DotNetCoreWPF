@@ -13,6 +13,7 @@
                 <Button Content="WindowStyle" Click="Button_Click_3" Margin="5"></Button>
                 <Button Content="Icon" Click="Button_Click_4" Margin="5"></Button>
                 <Button Content="ResizeMode" Click="Button_Click_5" Margin="5"></Button>
+                <CheckBox Content="TopMost" VerticalAlignment="Center" IsChecked="False" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"></CheckBox>
                 <GroupBox Header="窗口启动位置">
                     <WrapPanel>
                         <Button Content="CenterOwner" Click="Button_Click_12" Margin="5"></Button>
@@ -44,6 +45,28 @@
         <GroupBox Header="DialogResult" Margin="10">
             <WrapPanel>
                 <Button Content="打开Dialog" Click="Button_Click_11" Margin="5"/>
+            </WrapPanel>
+        </GroupBox>
+
+        <GroupBox Header="SystemParameters" Margin="10">
+            <WrapPanel>
+                <Label Name="lbl_FullScreenSize"></Label>
+                <Label Name="lbl_ScreenSize"></Label>
+            </WrapPanel>
+        </GroupBox>
+
+        <GroupBox Header="DialogResult" Margin="10">
+            <WrapPanel>
+                <Button Content="记录窗口位置" Click="Button_Click_15" Margin="5"/>
+            </WrapPanel>
+        </GroupBox>
+
+        <GroupBox Header="非矩形窗口" Margin="10">
+            <WrapPanel>
+                <Button Content="PNG图片窗口" Click="Button_Click_16" Margin="5"/>
+                <Button Content="Path窗口" Click="Button_Click_17" Margin="5"/>
+                <Button Content="形状元素窗口" Click="Button_Click_18" Margin="5"/>
+                <Button Content="可以改变大小的形状元素窗口" Click="Button_Click_19" Margin="5"/>
             </WrapPanel>
         </GroupBox>
     </WrapPanel>

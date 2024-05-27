@@ -24,6 +24,13 @@ namespace WindowDemo
         public MainWindow()
         {
             InitializeComponent();
+            LoadSystemParameters();
+        }
+
+        private void LoadSystemParameters()
+        {
+            lbl_FullScreenSize.Content = $"工作区域宽度 :{SystemParameters.FullPrimaryScreenWidth} 高度:{SystemParameters.FullPrimaryScreenHeight}";
+            lbl_ScreenSize.Content = $"屏幕宽度 :{SystemParameters.PrimaryScreenWidth} 高度:{SystemParameters.PrimaryScreenHeight}";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -150,6 +157,57 @@ namespace WindowDemo
             xAMLWindow.Left = 80; //距离屏幕左边边缘的距离是80
             xAMLWindow.Top = 100;  //距离屏幕顶部边缘的距离是100
             xAMLWindow.Show();
+        }
+
+        private void GetScreenParamters()
+        {
+            //多个屏幕时
+            System.Windows.Forms.Screen[] allScreen = System.Windows.Forms.Screen.AllScreens;
+
+            //屏幕1的工作区域
+            var firstScreenWorkingArea = allScreen[0].WorkingArea;
+            var width = firstScreenWorkingArea.Width;
+            var height = firstScreenWorkingArea.Height;
+        }
+
+        private void Button_Click_15(object sender, RoutedEventArgs e)
+        {
+            RecordSizeAndPosWindow recordSizeAndPosWindow = new RecordSizeAndPosWindow();
+            recordSizeAndPosWindow.Show();
+        }
+
+        private void Button_Click_16(object sender, RoutedEventArgs e)
+        {
+            PngWindow pngWindow = new PngWindow();
+            pngWindow.Show();
+        }
+
+        private void Button_Click_17(object sender, RoutedEventArgs e)
+        {
+            PathWindow pathWindow = new PathWindow();
+            pathWindow.Show();
+        }
+
+        private void Button_Click_18(object sender, RoutedEventArgs e)
+        {
+            IrregularElementWindow irregularElementWindow = new IrregularElementWindow();
+            irregularElementWindow.Show();
+        }
+
+        private void Button_Click_19(object sender, RoutedEventArgs e)
+        {
+            IrregularElementWindowWithResize irregularElementWindow = new IrregularElementWindowWithResize();
+            irregularElementWindow.Show();
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            this.Topmost = true;
+        }
+
+        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            this.Topmost = false;
         }
     }
 }

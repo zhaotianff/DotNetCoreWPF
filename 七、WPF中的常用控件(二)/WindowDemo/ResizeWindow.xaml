@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ResizeWindow" Height="450" Width="800">
     <StackPanel>
-        <Label Content="ResizeMode"></Label>
+        <Label Content="ResizeMode" Name="lbl_ResizeMode"></Label>
         <ComboBox Width="250" HorizontalAlignment="Left" SelectionChanged="ComboBox_SelectionChanged" Name="combox_ResizeMode">
             <ComboBoxItem>NoResize</ComboBoxItem>
             <ComboBoxItem>CanMinimize</ComboBoxItem>

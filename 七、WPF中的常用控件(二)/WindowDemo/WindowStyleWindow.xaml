@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="WindowStyleWindow" Height="450" Width="800">
     <StackPanel>
-        <Label Content="Window Style"></Label>
+        <Label Content="Window Style" Name="lbl_WindowStyle"></Label>
         <ComboBox Width="220" SelectionChanged="ComboBox_SelectionChanged" Name="combox_WindowStyle" HorizontalAlignment="Left">
             <ComboBoxItem>None</ComboBoxItem>
             <ComboBoxItem>SingleBorderWindow</ComboBoxItem>

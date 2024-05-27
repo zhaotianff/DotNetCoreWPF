@@ -25,6 +25,7 @@ namespace WindowDemo
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.WindowStyle = (WindowStyle)combox_WindowStyle.SelectedIndex;
+            this.lbl_WindowStyle.Content = $"WindowStyle = {this.WindowStyle.ToString()}";
         }
     }
 }
