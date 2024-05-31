@@ -5,9 +5,15 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextBoxDemo", "TextBoxDemo\TextBoxDemo.csproj", "{0E3EADD4-2D9A-4788-A409-5008BACE4012}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordBoxDemo", "PasswordBoxDemo\PasswordBoxDemo.csproj", "{D1C1775F-A4EE-4490-9247-023C516FB96D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordBoxDemo", "PasswordBoxDemo\PasswordBoxDemo.csproj", "{D1C1775F-A4EE-4490-9247-023C516FB96D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichTextBoxDemo", "RichTextBoxDemo\RichTextBoxDemo.csproj", "{94954018-DC46-4391-8767-B8DF6383E53F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RichTextBoxDemo", "RichTextBoxDemo\RichTextBoxDemo.csproj", "{94954018-DC46-4391-8767-B8DF6383E53F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBoxDemo", "ListBoxDemo\ListBoxDemo.csproj", "{60324099-FAE0-4909-957A-1DE06CFCB551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBoxDemo", "ComboBoxDemo\ComboBoxDemo.csproj", "{FA13618C-D60F-46B2-99D2-B76A9FEFF449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewDemo", "TreeViewDemo\TreeViewDemo.csproj", "{5BE04F8A-D1CA-4148-AD2F-D1841A7F8C96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{94954018-DC46-4391-8767-B8DF6383E53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94954018-DC46-4391-8767-B8DF6383E53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94954018-DC46-4391-8767-B8DF6383E53F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60324099-FAE0-4909-957A-1DE06CFCB551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60324099-FAE0-4909-957A-1DE06CFCB551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60324099-FAE0-4909-957A-1DE06CFCB551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60324099-FAE0-4909-957A-1DE06CFCB551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA13618C-D60F-46B2-99D2-B76A9FEFF449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA13618C-D60F-46B2-99D2-B76A9FEFF449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA13618C-D60F-46B2-99D2-B76A9FEFF449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA13618C-D60F-46B2-99D2-B76A9FEFF449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BE04F8A-D1CA-4148-AD2F-D1841A7F8C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BE04F8A-D1CA-4148-AD2F-D1841A7F8C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BE04F8A-D1CA-4148-AD2F-D1841A7F8C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BE04F8A-D1CA-4148-AD2F-D1841A7F8C96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,45 @@
+﻿<Window x:Class="TreeViewDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TreeViewDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TreeView>
+            <TreeViewItem Header="小湔">
+                <TreeViewItem Header="1"/>
+                <TreeViewItem Header="80"/>
+            </TreeViewItem>
+            <TreeViewItem Header="立海大">
+                <TreeViewItem Header="2"/>
+                <TreeViewItem Header="72"/>
+            </TreeViewItem>
+        </TreeView>
+
+        <TreeView Name="tree2" Grid.Column="1">
+            
+        </TreeView>
+
+        <TreeView Name="tree3" Grid.Column="2">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding SubItems}" DataType="{x:Type local:Student}">
+                    <Label Content="{Binding Name}"/>
+                    <HierarchicalDataTemplate.ItemTemplate>
+                        <DataTemplate DataType="{x:Type local:SubItem}">
+                            <Label Content="{Binding Id}"></Label>
+                        </DataTemplate>
+                    </HierarchicalDataTemplate.ItemTemplate>
+
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+    </Grid>
+</Window>

@@ -1,0 +1,70 @@
+﻿<Window x:Class="ListBoxDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListBoxDemo"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="获取绑定生成的列表项">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+
+                <ListBox Name="listbox1"></ListBox>
+                <Button Content="获取选中的项" Grid.Row="1" Click="Button_Click"></Button>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="包含多种类型对象的列表" Grid.Row="0" Grid.Column="1">
+            <ListBox>
+                <ListBox.Items>
+                    <ListBoxItem>HelloWorld</ListBoxItem>
+                    <ListBoxItem Content="{x:Static sys:DateTime.Now}"></ListBoxItem>
+                    <ListBoxItem>
+                        <ListBoxItem.Content>
+                            <Image Stretch="Uniform" Height="150" Source="https://img0.baidu.com/it/u=2560415768,2503528984&amp;fm=253&amp;app=138&amp;size=w931&amp;n=0&amp;f=JPEG&amp;fmt=auto?sec=1717261200&amp;t=9c08bc35cfa6953d1b68c3bdcbc7e8f9" ></Image>
+                        </ListBoxItem.Content>
+                    </ListBoxItem>
+                </ListBox.Items>
+            </ListBox>
+        </GroupBox>
+
+        <GroupBox Grid.Row="1" Grid.Column="0">
+            <GroupBox Header="使用代码添加列表项">
+                <ListBox Name="listbox3"></ListBox>
+            </GroupBox>
+        </GroupBox>
+
+        <GroupBox Grid.Row="1" Grid.Column="1" Header="SelectedValuePath演示">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+
+                <ListBox Name="listbox4" SelectedValuePath="Name" SelectionChanged="listbox4_SelectionChanged" SelectionMode="Multiple">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}" />
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <Button Content="获取SelectedValue" Grid.Row="1" Click="Button_Click_1"></Button>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
