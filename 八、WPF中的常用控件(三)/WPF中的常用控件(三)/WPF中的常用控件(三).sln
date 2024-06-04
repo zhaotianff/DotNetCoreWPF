@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordBoxDemo", "Password
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RichTextBoxDemo", "RichTextBoxDemo\RichTextBoxDemo.csproj", "{94954018-DC46-4391-8767-B8DF6383E53F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBoxDemo", "ListBoxDemo\ListBoxDemo.csproj", "{60324099-FAE0-4909-957A-1DE06CFCB551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListBoxDemo", "ListBoxDemo\ListBoxDemo.csproj", "{60324099-FAE0-4909-957A-1DE06CFCB551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBoxDemo", "ComboBoxDemo\ComboBoxDemo.csproj", "{FA13618C-D60F-46B2-99D2-B76A9FEFF449}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComboBoxDemo", "ComboBoxDemo\ComboBoxDemo.csproj", "{FA13618C-D60F-46B2-99D2-B76A9FEFF449}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewDemo", "TreeViewDemo\TreeViewDemo.csproj", "{5BE04F8A-D1CA-4148-AD2F-D1841A7F8C96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeViewDemo", "TreeViewDemo\TreeViewDemo.csproj", "{5BE04F8A-D1CA-4148-AD2F-D1841A7F8C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewDemo", "ListViewDemo\ListViewDemo.csproj", "{39EF5044-8629-461D-A968-80848D6E3575}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5BE04F8A-D1CA-4148-AD2F-D1841A7F8C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BE04F8A-D1CA-4148-AD2F-D1841A7F8C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BE04F8A-D1CA-4148-AD2F-D1841A7F8C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39EF5044-8629-461D-A968-80848D6E3575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39EF5044-8629-461D-A968-80848D6E3575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39EF5044-8629-461D-A968-80848D6E3575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39EF5044-8629-461D-A968-80848D6E3575}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
