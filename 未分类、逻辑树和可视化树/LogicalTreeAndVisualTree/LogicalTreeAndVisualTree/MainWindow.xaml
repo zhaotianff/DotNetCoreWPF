@@ -1,0 +1,26 @@
+﻿<Window x:Class="LogicalTreeAndVisualTree.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogicalTreeAndVisualTree"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="900" Name="main">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <RichTextBox Name="rtbox"></RichTextBox>
+        </Grid>
+
+        <Grid Name="grid" Grid.Column="1">
+            <Button HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,80,0" Grid.Row="1" Content="获取视觉树" Click="GetVisualTree_Click"></Button>
+            <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="获取逻辑树" Grid.Row="1" Click="GetLogicalTree_Click"></Button>
+            <Button HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,160,0" Grid.Row="1" Content="通过逻辑树获取对象" Click="GetChildViaLogicalTree_Click"></Button>
+        </Grid>
+    </Grid>
+   
+</Window>
