@@ -17,9 +17,10 @@
         </Grid>
 
         <Grid Name="grid" Grid.Column="1">
-            <Button HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,80,0" Grid.Row="1" Content="获取视觉树" Click="GetVisualTree_Click"></Button>
-            <Button HorizontalAlignment="Right" VerticalAlignment="Center" Content="获取逻辑树" Grid.Row="1" Click="GetLogicalTree_Click"></Button>
-            <Button HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,160,0" Grid.Row="1" Content="通过逻辑树获取对象" Click="GetChildViaLogicalTree_Click"></Button>
+            <Button HorizontalAlignment="Right" Name="btn1" Style="{StaticResource ButtonStyle}" VerticalAlignment="Center" Margin="0,0,280,0" Grid.Row="1" Content="通过可视化树获取对象" Click="GetChildViaVisualTree_Click"></Button>
+            <Button HorizontalAlignment="Right" Name="btn2" VerticalAlignment="Center" Margin="0,0,160,0" Grid.Row="1" Content="通过逻辑树获取对象" Click="GetChildViaLogicalTree_Click"></Button>
+            <Button HorizontalAlignment="Right" Name="btn3" VerticalAlignment="Center" Content="获取逻辑树" Grid.Row="1" Click="GetLogicalTree_Click"></Button>
+            <Button HorizontalAlignment="Right" Name="btn4" VerticalAlignment="Center" Margin="0,0,80,0" Grid.Row="1" Content="获取视觉树" Click="GetVisualTree_Click"></Button>
         </Grid>
     </Grid>
    

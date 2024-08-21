@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:LogicalTreeAndVisualTree"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="ButtonStyle.xaml"></ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -105,7 +105,40 @@ namespace LogicalTreeAndVisualTree
 
         private void GetChildViaLogicalTree_Click(object sender, RoutedEventArgs e)
         {
-            this.grid.FindName()
+            var obj = this.grid.FindName("btn1");
+            MessageBox.Show(obj.GetType().FullName);
+        }
+
+        private void GetChildViaVisualTree_Click(object sender, RoutedEventArgs e)
+        {
+            //查找控件模板中的名称为Border的控件
+            var border = EnumVisual(this.btn1, "Border");
+            if (border != null)
+            {
+                var borderObj = border as Border;
+
+                if (borderObj != null)
+                {
+                    borderObj.CornerRadius = new CornerRadius(10);
+                }
+            }
+        }
+
+        public Visual EnumVisual(Visual myVisual,string controlName)
+        {
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(myVisual); i++)
+            {
+                
+                Visual childVisual = (Visual)VisualTreeHelper.GetChild(myVisual, i);
+                var nameObj = childVisual.GetValue(NameProperty);
+
+                if (nameObj != null && nameObj.ToString() == controlName)
+                    return childVisual;
+
+                EnumVisual(childVisual,controlName);
+            }
+
+            return null;
         }
     }
 }
