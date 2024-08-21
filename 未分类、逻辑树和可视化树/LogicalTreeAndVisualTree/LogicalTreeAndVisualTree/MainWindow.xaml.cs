@@ -122,6 +122,9 @@ namespace LogicalTreeAndVisualTree
                     borderObj.CornerRadius = new CornerRadius(10);
                 }
             }
+
+            //也可以通过下面的方式
+            //object findObj = this.btn1.Template.FindName("Border",this.btn1);
         }
 
         public Visual EnumVisual(Visual myVisual,string controlName)
