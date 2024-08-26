@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDemo", "SimpleDemo\SimpleDemo.csproj", "{2E4F9E44-530C-4A19-992F-91DCFF9E8451}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleDemo", "SimpleDemo\SimpleDemo.csproj", "{2E4F9E44-530C-4A19-992F-91DCFF9E8451}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicListBoxDataTemplate", "DynamicListBoxDataTemplate\DynamicListBoxDataTemplate.csproj", "{38AE2D6D-BD64-4EBE-927A-5BE5BC99041F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicListBoxDataTemplate", "DynamicListBoxDataTemplate\DynamicListBoxDataTemplate.csproj", "{38AE2D6D-BD64-4EBE-927A-5BE5BC99041F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTemplateSelectorDemo", "DataTemplateSelectorDemo\DataTemplateSelectorDemo.csproj", "{42A30386-FE17-46D3-9A64-8597B28D59B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{38AE2D6D-BD64-4EBE-927A-5BE5BC99041F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38AE2D6D-BD64-4EBE-927A-5BE5BC99041F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38AE2D6D-BD64-4EBE-927A-5BE5BC99041F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A30386-FE17-46D3-9A64-8597B28D59B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A30386-FE17-46D3-9A64-8597B28D59B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A30386-FE17-46D3-9A64-8597B28D59B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A30386-FE17-46D3-9A64-8597B28D59B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
